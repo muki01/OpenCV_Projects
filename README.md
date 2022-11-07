@@ -1,5 +1,5 @@
 # OpenCV_Projects
-OpenCV projects like Face Recognition, Item Detection, Hand Tracking, Body Detection and more.
+OpenCV projects like Face Recognition, Item Detection, Hand Tracking, Human Detection and more.
 <br/>
 
 ## Download the latest revision
