@@ -71,15 +71,12 @@ while True:
         cv2.circle(img, (cx, cy), 30, (50, 50, 50), 2)
  
         # Game HUD
-        cvzone.putTextRect(img, f'Time: {int(totalTime-(time.time()-timeStart))}',
-                           (1000, 75), scale=3, offset=20)
+        cvzone.putTextRect(img, f'Time: {int(totalTime-(time.time()-timeStart))}',(1000, 75), scale=3, offset=20)
         cvzone.putTextRect(img, f'Score: {str(score).zfill(2)}', (60, 75), scale=3, offset=20)
     else:
         cvzone.putTextRect(img, 'Game Over', (400, 400), scale=5, offset=30, thickness=7)
         cvzone.putTextRect(img, f'Your Score: {score}', (450, 500), scale=3, offset=20)
         cvzone.putTextRect(img, 'Press R to restart', (460, 575), scale=2, offset=10)
- 
-
  
     cv2.imshow("Image", img)
     key = cv2.waitKey(1)
@@ -87,7 +84,6 @@ while True:
     if key == ord('r'):
         timeStart = time.time()
         score = 0
-
 
     if key == 27:
         break

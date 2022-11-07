@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 from cvzone.HandTrackingModule import HandDetector
-import math
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume

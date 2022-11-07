@@ -31,7 +31,7 @@ while True:
             fingers2 = detector.fingersUp(hand2)
 
     fingers = fingers1[0] + fingers1[1]+fingers1[2]+fingers1[3]+fingers1[4]+fingers2[0] + fingers2[1]+fingers2[2]+fingers2[3]+fingers2[4]
-    cv2.putText(img, (str(fingers)), (0, 25), cv2.FONT_HERSHEY_PLAIN, 2, (255, 128, 0), 2)
+    cv2.putText(img, (str(fingers)), (0, 40), cv2.FONT_HERSHEY_PLAIN, 3, (255, 128, 0), 2)
     
     cv2.imshow("Image", img)
     key = cv2.waitKey(1)
