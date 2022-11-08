@@ -7,13 +7,13 @@ cap.set(4,720)
 
 segmentor = SelfiSegmentation()
 
-img_arkaplan = cv2.imread("./BackgroundRemove/background2.png")
+background_img = cv2.imread("./BackgroundRemove/background2.png")
 
 while True:
     success, img = cap.read()
 
     #imgOut = segmentor.removeBG(img, (0, 0, 0), threshold=0.8)
-    imgOut = segmentor.removeBG(img, img_arkaplan, threshold=0.8)
+    imgOut = segmentor.removeBG(img, background_img, threshold=0.8)
 
     #cv2.imshow("Image", img)
     cv2.imshow("Image-Out", imgOut)
